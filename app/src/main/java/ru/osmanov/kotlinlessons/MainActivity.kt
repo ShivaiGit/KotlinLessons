@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         val weather1 = Weather ("Москва", TypesOfWeather.SUNNY, 5)
         val weather2 = weather1.copy(typeOfWeather = TypesOfWeather.RAIN, temperature = 12)
+        tvLocality.text = weather2.locality
+        tvTypeOfWeather.text = weather2.typeOfWeather.toString()
+        tvTemperature.text = weather2.temperature.toString()
 
         button.setOnClickListener {
 
