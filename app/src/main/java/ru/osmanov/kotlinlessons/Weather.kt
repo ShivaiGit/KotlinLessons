@@ -1,3 +1,3 @@
 package ru.osmanov.kotlinlessons
 
-data class Weather(val locality: String, val typeOfWeather: String, val temperature: Int)
+data class Weather(val locality: String, val typeOfWeather: TypesOfWeather, val temperature: Int)
